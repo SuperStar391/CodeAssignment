@@ -69,7 +69,8 @@ const TransactionList = ({ data }) => {
       }
     });
     setList(tList);
-  }, [data, now]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data]);
 
   return (
     <>

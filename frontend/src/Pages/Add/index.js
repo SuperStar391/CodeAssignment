@@ -53,6 +53,7 @@ const AddTransaction = () => {
       alert.success(message);
       dispatch(clearMessage());
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [name, date, id, alert, error, message, dispatch]);
 
   const handleSubmit = () => {
